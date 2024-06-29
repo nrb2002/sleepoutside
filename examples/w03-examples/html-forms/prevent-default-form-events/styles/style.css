@@ -1,0 +1,16 @@
+html{
+    height: 98.5vh;
+    border: 5px solid green;
+}
+
+body{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 20%;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
