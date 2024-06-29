@@ -8,7 +8,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Built-in Form Validation Examples</h1>
+    <main>
+        <h1>Built-in Form Validation Examples</h1>
+
+        <!-- The simplest HTML validation feature is the required attribute. To make an input mandatory, 
+         add this attribute to the element. When this attribute is set, the element matches the :required UI pseudo-class 
+         and the form won't submit, displaying an error message on submission when the input is empty. 
+         While empty, the input will also be considered invalid, matching the :invalid UI pseudo-class. -->
+        <form>
+            <fieldset>
+                <legend>Built-in Validation</legend>
+            
+                <label>Firstname (required)
+                    <input id="firstname" name="firstname" required />
+                </label><br>
+
+                <label>Lastname (optional)
+                    <input id="lastname" name="lastname" />
+                </label><br>
+
+                <label>
+                    Phone number (243) - 123456789 (<input
+                    name="countryCode" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit area code" size="1" />) - (0)
+                    <input name="phoneNumber" type="tel" pattern="[0-9]{9}" placeholder="#########" aria-label="9-digit number" size="6" />
+                </label><br>
+                
+                <label>Email address (required)
+                    <input id="email" name="email" pattern="^[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" required />
+                </label><br>
+
+                <label>Create a password (required)
+                    <input id="pass" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}" required />
+                </label><br>
+
+                <label for="passConfirm">Confirm your password (required)
+                    <input id="passConfirm" name="passConfirm" required />
+                </label><br>
+
+                <button>Submit</button>
+            </fieldset>
+        </form>
+    </main>
+      
 
 
     <script src="script.js"></script>
