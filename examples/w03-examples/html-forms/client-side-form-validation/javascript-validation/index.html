@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Validation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>JavaScript Validation Example</h1>
+        <form novalidate>
+            <fieldset>
+                <p>
+                <label for="mail">
+                    <span>Please enter an email address:</span>
+                    <input type="email" id="mail" name="mail" required minlength="8" />
+                    <span class="error" aria-live="polite"></span>
+                </label>
+                </p>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+    </main> 
+    <script src="script.js"></script>
+</body>
+</html>

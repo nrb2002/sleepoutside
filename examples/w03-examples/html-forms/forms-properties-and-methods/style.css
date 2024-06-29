@@ -1,0 +1,20 @@
+body{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 20%;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+form{
+    border: solid .5px ;
+    padding: 2%;    
+    border-color: #e2dbdb;
+    background: #f6f3f3;
+    margin-bottom: 2%;
+}
+
+form, fieldset {border-radius: 5px;}

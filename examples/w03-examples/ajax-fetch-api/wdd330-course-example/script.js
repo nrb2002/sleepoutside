@@ -22,11 +22,6 @@ async function getPokemon(source){
     }    
 }
 
-// function doStuff(res){
-//     results = res;
-//     console.log("first", results);
-// }
-
 getPokemon(url);
 console.log("second:", results)  ;
 
