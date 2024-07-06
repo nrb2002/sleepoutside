@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Templace Element</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Content Templace Element</h1>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <td>UPC_Code</td>
+                <td>Product_Name</td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- existing data could optionally be include here -->
+        </tbody>
+    </table><br>
+    <input type="submit" id="addProduct" value="Add product">
+
+    <!-- Templace document fragment -->
+    <!-- By default, the element's content is not rendered when the page loads. -->
+
+    <!-- First, we have a table into which we will later insert content using JavaScript code. Then comes the template, which describes the structure of an HTML fragment representing a single table row. -->
+    <template id="productRow">
+        <tr>
+            <td class="record"></td>
+            <td></td>
+        </tr>
+    </template>
+    <!-- Templace document fragment -->
+    <script src="script.js"></script>
+</body>
+</html>

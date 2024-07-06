@@ -1,0 +1,62 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #0d0d39;
+  color: aliceblue;
+}
+h1{
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.container{  
+  height: 700px;
+  width: 700px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.box{
+  background-color: rgb(111, 24, 24);
+  height: 200px;
+  width: 200px;
+  position: relative;
+  border-radius: 50%;
+  top: 100px;
+  left: 220px;
+  padding:100px 50px 0;
+  text-align: center;
+  justify-content: center;
+  font-size: 3rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+  10%{
+    height: 150px;
+    width: 150px;
+    
+  }
+  25%{
+    height: 200px;
+    width: 180px;
+    
+  }
+  50%{
+    height: 150px;
+    width: 220px;
+    transform: translateY(240px);
+  }
+  75%{
+    height: 200px;
+    width: 220px;
+    transform: translateY(240px);
+  }
+  100%{
+    box-shadow: -20px 20px 100px rgb(207, 119, 119);
+  }
+}
